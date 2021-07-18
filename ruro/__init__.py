@@ -22,6 +22,7 @@ try:
         BaseIterableExit,
     )
     from .basics import Constant, IterableConstant, Exec, Map, Filter, Sum
+    from . import decorators
 
     __all__ = [
         "Entry",
@@ -42,6 +43,7 @@ try:
         "Map",
         "Filter",
         "Sum",
+        "decorators",
     ]
 except ImportError:
     pass
